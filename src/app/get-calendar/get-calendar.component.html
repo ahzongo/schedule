@@ -1,1 +1,28 @@
-<p>get-calendar works!</p>
+<div class="container-fluid">
+    <div id="title">
+        <h1> Schedule </h1>
+        <p>Don't miss your timetable anymore</p>
+    </div>
+    <div class="register">
+        <mat-card class="register-form">
+            <mat-card-header>
+                <mat-card-title>
+                    Upload your Calendar
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="row">
+                    <mat-form-field class="form">
+                        <input id="input" matInput placeholder="Email"/>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button class="btn btn-success"> Enregistrer </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

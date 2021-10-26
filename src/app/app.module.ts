@@ -9,12 +9,18 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { DisponibiliteComponent } from './disponibilite/disponibilite.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetCalendarComponent
+    GetCalendarComponent,
+    HomeComponent,
+    ReservationComponent,
+    DisponibiliteComponent
   ],
   imports: [
     ReactiveFormsModule,

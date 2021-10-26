@@ -12,7 +12,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { ReservationComponent } from './reservation/reservation.component';
-import { DisponibiliteComponent } from './disponibilite/disponibilite.component'
+import { DisponibiliteComponent } from './disponibilite/disponibilite.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DisponibiliteComponent } from './disponibilite/disponibilite.component'
   ],
   imports: [
     ReactiveFormsModule,
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     MatFormFieldModule,

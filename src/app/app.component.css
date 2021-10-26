@@ -1,0 +1,23 @@
+.app{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(41,70,217);
+    background: radial-gradient(circle, rgba(41,70,217,1) 0%, rgba(252,70,248,1) 100%);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.header p{
+    font-size: 15px;
+    font-style: italic;
+}

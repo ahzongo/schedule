@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { DisponibiliteComponent } from './disponibilite/disponibilite.component';
 import { RouterModule } from '@angular/router';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatCardModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

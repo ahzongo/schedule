@@ -1,1 +1,55 @@
-<p>disponibilite works!</p>
+<div class="reservation container-fluid">
+    <form>
+        <div class="mb-3 plage">
+            <label for="exampleInputEmail1" class="form-label">Plage horaire</label>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" [formControl]="plage" (change)="update()">
+                <option value="1">1h</option>
+                <option value="2">2h</option>
+                <option value="3">3h</option>
+                <option value="4">4h</option>
+            </select>
+          </div>
+    </form>
+    <div class="calendier">
+        <div class="weekdays">
+            <div>
+                <h3>SUN</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>MON</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>TUE</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>WED</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>THU</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>FRI</h3>
+                <h2>1</h2>
+            </div>
+            <div>
+                <h3>SAT</h3>
+                <h2>1</h2>
+            </div>
+        </div>
+        <div class="core">
+            <div class="time">
+                <div *ngFor="let i of plage_list">
+                    {{i}}h
+                </div>
+            </div>
+            <div class="date">
+
+            </div>
+        </div>
+    </div>
+</div>
